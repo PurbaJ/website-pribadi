@@ -1,0 +1,100 @@
+*{
+    margin :0;
+    padding :0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3rem;
+   
+}
+body{
+    min-height: 2900px;
+    background-color: grey;
+}
+header{
+    background: black;
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid white;
+    
+    
+}
+header .nav{
+    display: flex;
+    justify-content: space-between;
+   
+    
+    
+}
+.nav .logo{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    line-height:80px ;
+    margin-left: 2rem;
+    
+}
+.nav .logo a{
+    color :white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.nav .logo a span{
+    color :red;
+    font-size: 1.7rem;
+    
+
+}
+.nav .navbar{
+    line-height: 80px;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+}
+.nav .navbar a{
+    color:white;
+    text-decoration: none;
+    margin: 2rem;
+    font-weight: 500;
+}
+.nav .search{
+    line-height: 80px;
+    margin-right: 2rem;
+}
+.nav .search a{
+    color :white;
+    margin:2rem;
+
+}
+.nav .navbar a:hover,
+.nav .navbar a.active{
+    color :black;
+    background: white;
+    padding :12px;
+    transition: 0.5s all;
+    border-radius: 15px;
+    
+
+}
+@media (max-width:480px){
+    html{
+        font-size: 62%;
+    }
+    body{
+        background-color: black;
+    }
+    .nav .navbar{
+    position :absolute;
+       top :10%;
+       right :-100%;
+       background-color: var(--bg);
+       border :2px solid red;
+       width :30rem;
+       height :100vh;
+       transition: 0.8s all;
+    }
+    .nav .navbar a{
+        display :block;
+        margin :2.5rem;
+        padding :0.5rem;
+        font-size:2rem;
+    }
+}

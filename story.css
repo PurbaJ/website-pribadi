@@ -22,6 +22,8 @@ span{
 p{
     backdrop-filter: blur(30px);
     padding:2rem;
+    overflow: hidden;
+    
 }
 a{
     padding :2px;
